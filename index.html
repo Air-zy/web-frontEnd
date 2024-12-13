@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    
+    <meta name="title" content="Airzy">
+    <meta name="description" content="Full Stack developer, Airzy Turqueza. Landing Page">
+    <meta name="keywords" content="Airzy Turqueza, Airzy, Turqurza">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="30 days">
+    <meta name="author" content="AirzyAlt@gmail.com">
+
+    <meta name="msvalidate.01" content="A51CBFAECCED0805854B46E68675BB9A" >
+    
+    <title>Airzy Turqueza</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    >
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/e7d904dc-3a74-4413-9bc4-72f0e1d9fa62/monitor.svg?v=1709768625757"
+      type="image/webp"
+    >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="css/main.css" >
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button class="menu-icon" aria-label="Menu" onclick="menuTrigger(this)">
+          <div class="bun1"></div>
+          <div class="bun2"></div>
+          <div class="bun3"></div>   
+        </button>
+        <span>
+            <a class="nav-item" href="/home">Home<div class="underline"></div></a>
+            <div class="nav-item" onclick="toAirzy()">Airzy<div class="underline"></div></div>
+            <a class="nav-item" href="/contact">Contact<div class="underline"></div></a>
+            <div class="nav-item" onclick="toResources()">Resources<div class="underline"></div></div>
+        </span>
+      </nav>
+    </header>
+    <main id="main-content">
+      <article>
+        <section id="s1">
+          <h1>
+            Hi, I am <span id="airzy"></span> Turqueza
+          </h1>
+          <h3>
+            Full Stack Developer
+          </h3>
+        </section>
+        <section id="s2" class="txt-section">
+          <div>
+            <h2>Technical Skills</h2>
+            <div class="skill-container">
+
+              <ul><li>Languages</li></ul>
+              <blockquote>
+                <ul>
+                  <li>C++</li>
+                  <li>Javascript</li>
+                  <li>Python</li>
+                  <li>HTML/CSS</li>
+                  <li>Luau</li>
+                </ul>
+              </blockquote>
+
+              <ul><li>Technologies</li></ul>
+              <blockquote>
+                <ul>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                </ul>
+              </blockquote>
+
+              <ul>
+                <li>Other</li>
+              </ul>
+              <blockquote>
+                <ul>
+                  <li>Git</li>
+                  <li>Unity</li>
+                  <li>Hugging Face Gradio</li>
+                  <li>Roblox Game Development</li>
+                </ul>
+              </blockquote>
+            </div>
+          </div>
+        </section>
+        <section class="txt-section">
+          <h2>About me</h2>
+          <p>
+            I'm Airzy, a current student at <span style="color: #FF5733;">SAIT</span>, committed to mastering <span style="color: #FFC300;">software development</span> and pushing the limits of what I can achieve.
+          </p>
+          <p>
+            With a foundation in programming that began <span style="color: #ff99cc;">years ago</span>,
+            I continuously seek to <span id="adapt" >grow</span> and sharpen my expertise.
+          </p>
+          <p>
+            I create solutions through design and code, and I love what I do.
+          </p>
+        </section>
+        <section class="txt-section social-media-container">
+          <span class="social-medias">
+            <a href="https://github.com/Air-zy" class="fa fa-github"></a>
+            <a href="https://leetcode.com/u/AirzyEz/" class="fa fa-code"></a>
+            <a href="https://www.youtube.com/channel/UCgyAZGAZR_knbCnp-bP9wkw" class="fa fa-youtube-play"></a>
+            <a href="https://www.instagram.com/airalternative/" class="fa fa-instagram"></a>
+            <a href="https://www.snapchat.com/add/airalternative" class="fa fa-snapchat-ghost"></a>
+            <a href="https://x.com/airzyalt" class="fa fa-twitter"></a>
+          </span>
+        </section>
+      </article>
+      <div class="main-footer">
+        <p class="small-p">© 2024 Airzy Turqueza.</p>
+      </div>
+    </main> 
+    <aside id="side-bar">
+      <button class="icon-button" id="toggleLightMode" onclick="toggleLightMode()">
+        <i class="fa fa-moon-o" id="icon"></i>
+      </button>
+      <div id="sbar-flex">
+        <a class="nav-item" href="/home">Home<div class="underline"></div></a>
+        <div class="nav-item" onclick="toAirzy()">Airzy<div class="underline"></div></div>
+        <a class="nav-item" href="/contact">Contact<div class="underline"></div></a>
+        <div class="nav-item" onclick="toResources()">Resources<div class="underline"></div></div>
+      </div>
+      <span class="social-medias">
+        <a href="https://github.com/Air-zy" class="fa fa-github"></a>
+        <a href="https://leetcode.com/u/AirzyEz/" class="fa fa-code"></a>
+        <a href="https://www.youtube.com/channel/UCgyAZGAZR_knbCnp-bP9wkw" class="fa fa-youtube-play"></a>
+        <a href="https://www.instagram.com/airalternative/" class="fa fa-instagram"></a>
+        <a href="https://www.snapchat.com/add/airalternative" class="fa fa-snapchat-ghost"></a>
+        <a href="https://x.com/airzyalt" class="fa fa-twitter"></a>
+      </span>
+      <p class="small-p">© 2024 Airzy Turqueza.</p>
+    </aside>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<section class="txt-section">
+  <style>
+    #projects {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      scrollbar-width: thin;
+      
+      height: 700px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      
+      gap: 20px;
+    }
+    .project-container {
+      position: relative;
+      margin: 20px;
+
+      transition: transform 0.3s ease;
+    }
+    .project-card {
+      position: relative;
+      flex-shrink: 0;
+      
+      border: solid var(--text-grey) 1px;
+      border-radius: 10px;
+
+      padding: 20px;
+      margin-bottom: 10px;
+      
+      display: flex;
+      gap: 20px;
+      
+      text-decoration: none; /* remove underline */
+      color: inherit;
+      cursor: pointer;
+    }
+
+    /* removing the href effects */
+    .project-card:focus,
+    .project-card:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+    .project-container:hover {
+      transform: translateY(-10px);
+    }
+    .project-container img {
+      border-radius: 6px;
+    }
+    .project-footer {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      
+      flex-wrap: wrap;
+    }
+    .project-footer p {
+      border-radius: 12px;
+      border: solid var(--text-grey) 1px;
+      margin: 0px;
+      
+      font-size: 75%;
+      
+      padding: 10px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+    .project-card div p {
+      margin: 0px;
+      padding-bottom: 10px;
+      
+      font-size: calc(1rem * 0.9);
+    }
+    .proj-title {
+      position: absolute;
+      top: -10px;
+      
+      font-size: 1rem;
+      white-space: nowrap;
+      
+      left: 40px;
+      text-align: center;
+      padding-right: 4px;
+      padding-left: 4px;
+      margin: 0px;
+      
+      background-color: var(--frame-bcol);
+    }
+    .icon-button .button-text {
+      display: none;
+    }
+    .icon-button:hover .button-text {
+      display: inline;
+    }
+    @media (max-width: 600px) {
+      #projects {
+        display: flex;
+        flex-direction: column;
+
+        overflow-y: hidden;
+        overflow-x: auto;
+      }
+    }
+  </style>
+  <h2>Projects
+    <button class="icon-button" onclick="reloadProjects()">
+      <span class="button-text">Refresh</span> <i class="fa fa-refresh" id="icon"></i>
+    </button>
+  </h2>
+  <div id="projects">
+    
+  </div>
+</section>

@@ -217,14 +217,7 @@ async function reloadProjects() {
     }, index * 100)); 
 
   } catch (error) {
-    let errorMessage = 'Failed to load projects.';
-    if (error.name === 'TypeError' && error.message.includes('NetworkError')) {
-      errorMessage = 'Network error: Please check your internet connection or server availability.';
-    }
-    else if (error.message.includes('HTTP error')) {
-      const status = error.message.split(' ')[2];  // Extract HTTP status
-      errorMessage = `Server returned an error: ${status}. Please try again later.`;
-    }
+    let errorMessage = 'Failed to fetch projects: ' + String(error);
     const container = document.getElementById('projects');
     container.innerHTML = errorMessage;
     alert(errorMessage);

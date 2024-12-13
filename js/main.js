@@ -222,7 +222,7 @@ async function reloadProjects() {
       errorMessage = 'Network error: Please check your internet connection or server availability.';
     }
     else if (error.message.includes('HTTP error')) {
-      const status = error.message.split(' ')[2];  // Extract HTTP status
+      const status = error.message.split(' ')[2];
       errorMessage = `Server returned an error: ${status}. Please try again later.`;
     }
     alert(errorMessage);
